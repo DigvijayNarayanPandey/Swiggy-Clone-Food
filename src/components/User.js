@@ -10,8 +10,8 @@ const User = ({ name }) => {
             <div>Count ={count}</div>
             <button onClick={()=>{setCount(count+1)}}>+</button>&nbsp; &nbsp;
             <button onClick={() =>{setCount(count-1)}}>-</button>
-            <h3>Location: Bengaluru</h3>
-            <h3>Contact: @Bhisham</h3>
+            <h3>Location: Sikkim</h3>
+            <h3>Contact: <a href="mailto:digvijaynarayanpandey7@gmail.com">Email Me</a></h3>
         </div>
     )
 }

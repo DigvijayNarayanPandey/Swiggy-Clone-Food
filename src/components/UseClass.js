@@ -7,8 +7,8 @@ class UserClass extends React.Component{
         this.state = {
           count: 0,
           userinfo: {
-            name: "Bhisham",
-            location: "Bengaluru",
+            name: "Digvijay",
+            location: "Sikkim",
             avatar_url:""
           },
         };   
@@ -17,7 +17,7 @@ class UserClass extends React.Component{
 
     async componentDidMount() {
         // console.log("child Component Did Mount");
-        const data = await fetch("https://github.com/BhishamPandey");
+        const data = await fetch("https://github.com/DigvijayNarayanPandey");
         const json = await data.json();
         this.setState({
             userinfo:json,
@@ -54,7 +54,7 @@ class UserClass extends React.Component{
             </button>
             <h3>Location: {location}</h3>
             <img width={85} src={avatar_url} />
-            <h3>Contact: @Bhisham</h3>
+            <h3>Contact: digvijaynarayanpandey7@gmail.com</h3>
           </div>
         );
     }
